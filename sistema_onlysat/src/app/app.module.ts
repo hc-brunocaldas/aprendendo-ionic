@@ -6,22 +6,42 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { LoginPageModule } from '../pages/login/login.module';
+import { RecuperarSenhaPageModule } from '../pages/recuperar-senha/recuperar-senha.module';
+import { RecuperarUsuarioPageModule } from '../pages/recuperar-usuario/recuperar-usuario.module';
+import { LoginPage } from '../pages/login/login';
+import { BoletosPage } from '../pages/boletos/boletos';
+import { CadastrosPage } from '../pages/cadastros/cadastros';
+import { RelatoriosPage } from '../pages/relatorios/relatorios';
+import { VisualizarVeiculosPage } from '../pages/visualizar-veiculos/visualizar-veiculos';
+import { InicialPage } from '../pages/inicial/inicial';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage, 
+    BoletosPage,
+    InicialPage,
+    CadastrosPage,
+    RelatoriosPage, 
+    VisualizarVeiculosPage,
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    LoginPageModule
+    RecuperarSenhaPageModule,
+    RecuperarUsuarioPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage, 
+    BoletosPage,
+    InicialPage,
+    CadastrosPage,
+    RelatoriosPage, 
+    VisualizarVeiculosPage,
   ],
   providers: [
     StatusBar,

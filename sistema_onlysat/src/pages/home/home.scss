@@ -1,3 +1,48 @@
 page-home {
-
+    .homePage{
+        background:#3c7a94;
+        position: initial;
+    }
+    .usuario {
+        font-family: 'RalewayMedium',sans-serif;
+        text-align: center;
+        color: #fff;
+    }
+    .usuario span {
+        font-size: 29px;
+    }
+    .usuario p {
+        margin: 0 0 14px 0;
+        font-size: 21px;
+    }
+    .usuario img {
+        width: 100%;
+        max-width: 70px;
+        margin-bottom: 10px;
+    }   
+    .itemMenu {
+        background: #175874;
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        min-height: 80px;
+    }
+    ion-icon {
+        font-size: 44px;
+        padding: 10px 0 0px;
+    }
+    .itemMenu p{
+        margin: 0;
+        font-family: 'MyriadLight',sans-serif;
+        font-size: 14px;
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+    [col-6] {
+        padding: 10px;
+    }
+    .grid {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
 }

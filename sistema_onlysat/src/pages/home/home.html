@@ -1,15 +1,63 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-  <a (click)="goTo()">Login</a>
+<ion-content padding class="homePage">
+  <div class="usuario">
+    <span>Olá,</span>
+    <p>Cláudia Emanuele da Silva</p>
+    <img src="../../assets/imgs/perfil.png" alt="Cláudia Emanuele da Silva">
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <div class="itemMenu" (click)="inicialPage()">
+          <div class="icone">
+            <ion-icon name="home"></ion-icon>
+          </div>
+          <p>Inicial</p>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="itemMenu" (click)="cadastrosPage()">
+          <div class="icone">
+            <ion-icon name="add-circle"></ion-icon>
+          </div>
+          <p>Cadastros</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <div class="itemMenu" (click)="boletosPage()">
+          <div class="icone">
+            <ion-icon name="logo-usd"></ion-icon>
+          </div>
+          <p>Boletos</p>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="itemMenu" (click)="visualizarVeiculosPage()">
+          <div class="icone">
+            <ion-icon name="car"></ion-icon>
+          </div>
+          <p>Visualizar Veículos</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <div class="itemMenu" (click)="relatoriosPage()">
+          <div class="icone">
+            <ion-icon name="stats"></ion-icon>
+          </div>
+          <p>Relatórios</p>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="itemMenu" (click)="loginPage()">
+          <div class="icone">
+            <ion-icon name="log-out"></ion-icon>
+          </div>
+          <p>Sair</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

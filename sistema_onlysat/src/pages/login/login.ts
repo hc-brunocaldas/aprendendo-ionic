@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { RecuperarSenhaPage } from '../recuperar-senha/recuperar-senha';
+import { RecuperarUsuarioPage } from '../recuperar-usuario/recuperar-usuario';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the LoginPage page.
@@ -14,16 +17,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'login.html',
 })
 export class LoginPage {
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
+
   }
 
-  alertFunction(){
-    alert('clicou aqui')
+  recuperarSenha(){
+    this.navCtrl.push(RecuperarSenhaPage)
+  }
+  recuperarUsuario(){
+    this.navCtrl.push(RecuperarUsuarioPage)
+  }
+
+  home(){
+    this.navCtrl.push(HomePage); 
   }
 
 }

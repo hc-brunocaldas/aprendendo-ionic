@@ -18,12 +18,13 @@
 
         <ion-item class="campoForm">
           <ion-label floating>Usuário</ion-label>
-          <ion-input class="input" type="text"></ion-input>
+          <ion-input class="input user" type="text" [(ngModel)]="username">
+          </ion-input>
         </ion-item>
 
         <ion-item class="campoForm">
           <ion-label floating>Senha</ion-label>
-          <ion-input class="input" type="password"></ion-input>
+          <ion-input class="input pass" type="password" [(ngModel)]="password"></ion-input>
         </ion-item>
 
         <ion-item class="checkbox">
@@ -32,10 +33,11 @@
         </ion-item>
 
       </ion-list>
-      <button class="enviarForm" block>Entrar</button>
+
+      <button class="enviarForm" block (click)="home()">Entrar</button>
       <div class="links">
-        <a (click)="alertFunction()" class="left link">Esqueceu sua senha?</a>
-        <a (click)="alertFunction()" class="right link">Esqueceu seu usuário?</a>
+        <a (click)="recuperarSenha()" class="left link">Esqueceu sua senha?</a>
+        <a (click)="recuperarUsuario()" class="right link">Esqueceu seu usuário?</a>
       </div>
 
     </div>
